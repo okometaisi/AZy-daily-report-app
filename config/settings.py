@@ -136,19 +136,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '55e8-125-15-95-242.ngrok-free.app'  
-]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://55e8-125-15-95-242.ngrok-free.app ',  # ← ngrokのURLをここにコピペ
-]
-# ※ このURLは ngrok 起動のたびに変わるから、その都度ここも更新してね。
-
-CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-3d54c.up.railway.app',
     'https://55e8-125-15-95-242.ngrok-free.app'
 ]
+
 #このHTTPS変われば、全部変えなきゃいけない
 
