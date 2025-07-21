@@ -1,0 +1,7 @@
+tunnel: nippo-tunnel
+credentials-file: C:\Users\pocop\.cloudflared\80b52af6-39e4-49a3-8aaf-a869ad08c458.cfargotunnel.com.json
+
+ingress:
+  - hostname: success.nippou-azy.com
+    service: http://localhost:8000
+  - service: http_status:404

@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <a href="{% url 'home' %}" class="button" style="background-color: #172b5d;">ホームに戻る</a>
+</div>
+
+<div class="container">
+  <h1>{{ selected_year }}年 {{ selected_month }}月{% if selected_day %} {{ selected_day }}日{% endif %}</h1>
+
+  <p>summary_data 件数: {{ summary_data|length }}</p>
+  <p>task_data 件数: {{ task_data|length }}</p>
+  <p>比較元: {{ selected_year }}年{{ selected_month }}月</p>
+  <p>比較対象: {{ compare_year }}年{{ compare_month }}月</p>
+
+
+
+
+  <a href="javascript:history.back()" class="button" style="
+      position: absolute;
+      top: 57px;
+      right: 0;
+      background-color: #172b5d;
+      padding: 8px 16px;
+      text-decoration: none;">戻る</a>
+
+  <h2 style="margin-top: 30px;">会社・商品・作業内容ごとの作業時間集計</h2>
+
+  <h3>会社・商品ごとの作業時間</h3>
+  {% if summary_data %}
+  <table>
+    <thead>
+      <tr>
+        <th>会社名</th>
+        <th>商品名</th>
+        <th>作業時間 合計</th>
+        <th>作業時間 平均</th>
+        <th>件数</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in summary_data %}
+      <tr>
+        <td>{{ item.company }}</td>
+        <td>{{ item.product }}</td>
+        <td>{{ item.total_duration_hour }}時間{{ item.total_duration_minute }}分</td>
+        <td>{{ item.avg_duration_hour }}時間{{ item.avg_duration_minute }}分</td>
+        <td>{{ item.count }}件</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>表示する集計データがありません。</p>
+  {% endif %}
+
+  <h3>作業内容ごとの作業時間</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>作業内容</th>
+        <th>作業時間 合計</th>
+        <th>作業時間 平均</th>
+        <th>件数</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in task_data %}
+      <tr>
+        <td>{{ item.task }}</td>
+        <td>{{ item.total_duration_hour }}時間{{ item.total_duration_minute }}分</td>
+        <td>{{ item.avg_duration_hour }}時間{{ item.avg_duration_minute }}分</td>
+        <td>{{ item.count }}件</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 40px;">月別作業比較</h3>
+
+  <form method="get" style="margin-bottom: 20px;">
+    <label>比較対象（西暦）:</label>
+    <select name="compare_year">
+      {% for y in years %}
+        <option value="{{ y }}" {% if y == compare_year %}selected{% endif %}>{{ y }}</option>
+      {% endfor %}
+    </select>
+
+    <label>月:</label>
+    <select name="compare_month">
+      {% for m in months %}
+        <option value="{{ m }}" {% if m == compare_month %}selected{% endif %}>{{ m }}月</option>
+      {% endfor %}
+    </select>
+
+    <button type="submit">比較</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr style="color: white; background-color: #172b5d;">
+        <th>項目</th>
+        <th>今月</th>
+        <th>比較月</th>
+        <th>増減</th>
+        <th>増減率</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>総合計作業時間</td>
+        <td>{{ comparison.current.total|default:"-"  }}</td>
+        <td>{{ comparison.compare.total }}</td>
+        <td>{{ comparison.diff_total }}</td>
+        <td>{{ comparison.rate_total }}</td>
+        <td>{% if comparison.rate_total %}{{ comparison.rate_total }}{% else %}-{% endif %}</td>
+      </tr>
+      <tr>
+        <td>総平均作業時間</td>
+        <td>{{ comparison.current.average }}</td>
+        <td>{{ comparison.compare.average }}</td>
+        <td>{{ comparison.diff_avg }}</td>
+        <td>{{ comparison.rate_avg }}</td>
+        <td>{% if comparison.rate_avg %}{{ comparison.rate_avg }}{% else %}-{% endif %}</td>
+      </tr>
+      <tr>
+        <td>総件数</td>
+        <td>{{ comparison.current.count }}</td>
+        <td>{{ comparison.compare.count }}</td>
+        <td>{{ comparison.diff_count }}</td>
+        <td>{{ comparison.rate_count }}</td>
+        <td>{% if comparison.rate_count %}{{ comparison.rate_count }}{% else %}-{% endif %}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

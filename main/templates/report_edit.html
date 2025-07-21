@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>日報編集</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9ff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #5366d6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3c4cbc;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #5366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>日報編集</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="date">日付:</label>
+        <input type="date" name="date" value="{{ report.date }}" required>
+
+        <label for="company">会社名:</label>
+        <select name="company">
+            {% for company in company_choices %}
+                <option value="{{ company }}" {% if company == report.company %}selected{% endif %}>{{ company }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="product">商品名:</label>
+        <select name="product">
+            {% for product in product_choices %}
+                <option value="{{ product }}" {% if product == report.product %}selected{% endif %}>{{ product }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="task">作業内容:</label>
+        <input type="text" name="task" value="{{ report.task }}">
+
+        <label for="start_time">開始時間:</label>
+        <select name="start_time">
+            {% for time in time_choices %}
+                <option value="{{ time }}" {% if time == report.start_time|time:"H:i" %}selected{% endif %}>{{ time }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="end_time">終了時間:</label>
+        <select name="end_time">
+            {% for time in time_choices %}
+                <option value="{{ time }}" {% if time == report.end_time|time:"H:i" %}selected{% endif %}>{{ time }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="memo">メモ:</label>
+        <input type="text" name="memo" value="{{ report.memo }}">
+
+        <button type="submit">保存</button>
+    </form>
+
+    <a href="{% url 'report_list' %}">戻る</a>
+</body>
+</html>
+

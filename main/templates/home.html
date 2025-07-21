@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>日報アプリ ホーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        .button {
+            display: inline-block;
+            width: 250px;
+            padding: 15px 25px;
+            margin: 15px;
+            font-size: 18px;
+            background-color: rgb(58, 67, 123);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: rgb(58, 67, 123);
+        }
+    </style>
+</head>
+<body>
+    <h1>日報アプリ ホーム</h1>
+    <a href="{% url 'report_input' %}" class="button">日報入力</a><br>
+    <a href="{% url 'report_list' %}" class="button">日報一覧</a><br>  
+    <a href="#" class="button">不具合報告</a><br>
+    <a href="#" class="button">その他</a><br>
+    <a href="#" class="button">設定</a>
+
+</body>
+</html>

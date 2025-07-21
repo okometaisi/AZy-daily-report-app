@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日報入力</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        select, input[type="date"], textarea, input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #172b5d;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>日報入力画面</h1>
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="date">📅 日付:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="company">🏢 会社名:</label>
+        <select id="company" name="company" required>
+            <option value="">選択してください</option>
+            {% for c in company_choices %}
+                <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="product">📦 商品名:</label>
+        <select id="product" name="product" required>
+            <option value="">選択してください</option>
+            {% for p in product_choices %}
+                <option value="{{ p }}">{{ p }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="task">📝 作業内容:</label>
+        <textarea id="task" name="task" rows="3" required></textarea>
+
+          <label for="start_time">⏰ 開始時間:</label>
+          <input type="time" id="start_time" name="start_time" class="form-control" step="300">
+
+          <label for="end_time">⏰ 終了時間:</label>
+          <input type="time" id="end_time" name="end_time" class="form-control" step="300">
+
+
+
+        </select>
+
+        <label for="memo">💬 メモ:</label>
+        <textarea id="memo" name="memo" rows="2"></textarea>
+
+        <button type="submit">送信</button>
+
+        <div class="back">
+            <a href="{% url 'home' %}">← ホームに戻る</a>
+        </div>
+    </form>
+</body>
+</html>
+
+
+

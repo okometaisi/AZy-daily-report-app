@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日報一覧</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .filters {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 5px 10px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 12px;
+            background-color: #172b5d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .table-container {
+            overflow-x: auto;
+            width: 1000px;
+            max-width: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            min-width: 800px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #172b5d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>日報一覧</h1>
+
+    <div class="filters">
+        <form method="get">
+            <label for="year">年:</label>
+            <select name="year" id="year">
+                {% for y in years %}
+                    <option value="{{ y }}" {% if y == selected_year %}selected{% endif %}>{{ y }}年</option>
+                {% endfor %}
+            </select>
+
+            <label for="month">月:</label>
+            <select name="month" id="month">
+                {% for m in months %}
+                    <option value="{{ m }}" {% if m == selected_month %}selected{% endif %}>{{ m }}月</option>
+                {% endfor %}
+            </select>
+            
+            <label for="day">日:</label>
+            <select name="day" id="day">
+                <option value="">--</option>
+                {% for d in days %}
+                    <option value="{{ d }}" {% if d == selected_day %}selected{% endif %}>{{ d }}日</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">表示</button>
+        </form>
+    </div>
+
+    <h2>
+        {{ selected_year }}年 {{ selected_month }}月
+        {% if selected_day %}
+            {{ selected_day }}日
+        {% endif %}
+        日報
+    </h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>会社名</th>
+                    <th>商品名</th>
+                    <th>作業内容</th>
+                    <th>開始時間</th>
+                    <th>終了時間</th>
+                    <th>メモ</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for report in reports %}
+                    <tr>
+                        <td>{{ report.date|date:"Y/n/j" }}</td>
+                        <td>{{ report.company }}</td>
+                        <td>{{ report.product }}</td>
+                        <td>{{ report.task }}</td>
+                        <td>{{ report.start_time|time:"H:i" }}</td>
+                        <td>{{ report.end_time|time:"H:i" }}</td>
+                        <td>{{ report.memo }}</td>
+                        <td>
+                            <a href="{% url 'report_edit' report.id %}?year={{ selected_year }}&month={{ selected_month }}{% if selected_day %}&day={{ selected_day }}{% endif %}">編集</a> |
+                            <a href="{% url 'report_delete' report.id %}?year={{ selected_year }}&month={{ selected_month }}">削除</a>
+                        </td> 
+                    </tr>
+                {% empty %}
+                    <tr><td colspan="7">該当する日報がありません。</td></tr>
+                {% endfor %}
+                <div>
+               
+                  <a href="{% url 'report_comparison' %}?selected_year={{ selected_year }}&selected_month={{ selected_month }}"
+                     style="display: inline-block;
+                            padding: 8px 16px;
+                            background-color: #172b5d;
+                            color: white;
+                            border-radius: 6px;
+                            text-decoration: none;
+                            font-weight: bold;">
+                        日報集計を見る
+                  </a>
+
+
+                
+
+                        
+                    
+                    <a href="{% url 'report_comparison' %}?compare_year={{ selected_year }}&compare_month={{ selected_month }}"
+                        style="display: inline-block;
+                                padding: 8px 16px;
+                                background-color: #172b5d;
+                                color: white;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: bold;">
+                        月別作業比較を見る
+                    </a>
+
+                    <a href="{% url 'home' %}" style="
+                        display: inline-block;
+                        padding: 8px 16px;
+                        background-color: #172b5d;
+                        color: white;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        font-weight: bold;
+                    ">ホームに戻る</a>
+                </div>
+
+
+        
+                    </a>
+                </div>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

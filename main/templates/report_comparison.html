@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 20px;">
+  <!-- 右：戻る（JavaScript） -->
+  <a href="javascript:history.back()" style="
+      background-color: #172b5d;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;">
+      戻る
+  </a>
+  <!-- 左：ホームに戻る -->
+  <a href="{% url 'home' %}" style="
+      background-color: #172b5d;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;">
+      ホームに戻る
+  </a>
+
+  
+</div>
+
+<div class="container">
+  <h1>{{ selected_year }}年 {{ selected_month }}月 作業比較</h1>
+
+  <h2>会社・商品ごとの作業時間</h2>
+  {% if summary_data %}
+    <table>
+      <tr><th>会社</th><th>商品</th><th>合計</th><th>平均</th><th>件数</th></tr>
+      {% for item in summary_data %}
+      <tr>
+        <td>{{ item.company }}</td>
+        <td>{{ item.product }}</td>
+        <td>{{ item.total_duration_hour }}時間{{ item.total_duration_minute }}分</td>
+        <td>{{ item.avg_duration_hour }}時間{{ item.avg_duration_minute }}分</td>
+        <td>{{ item.count }}件</td>
+      </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>summary_data は空です。</p>
+  {% endif %}
+
+  <h2>作業内容ごとの作業時間</h2>
+  {% if task_data %}
+    <table>
+      <tr><th>作業</th><th>合計</th><th>平均</th><th>件数</th></tr>
+      {% for item in task_data %}
+      <tr>
+        <td>{{ item.task }}</td>
+        <td>{{ item.total_duration_hour }}時間{{ item.total_duration_minute }}分</td>
+        <td>{{ item.avg_duration_hour }}時間{{ item.avg_duration_minute }}分</td>
+        <td>{{ item.count }}件</td>
+      </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>task_data は空です。</p>
+  {% endif %}
+
+  <h2>月別作業比較</h2>
+  <table>
+    <thead>
+       <tr>
+         
+
+    <thead>
+  <tr>
+    <th>項目</th>
+
+    <!-- 今月の表示（選択不可、ただの表示） -->
+    <th style="text-align: center;">
+      <div>{{ selected_year }}</div>
+      <div>{{ selected_month }}月</div>
+    </th>
+
+    <!-- 比較プルダウン＋ボタン（赤枠に入れるやつ） -->
+    <th>
+      <form method="get" style="display: flex; flex-direction: column; align-items: center;">
+        <!-- 今月を hidden で送る -->
+        <input type="hidden" name="selected_year" value="{{ selected_year }}">
+        <input type="hidden" name="selected_month" value="{{ selected_month }}">
+
+        <!-- プルダウンとボタン -->
+        <button type="submit" style="margin-bottom: 4px;">比較</button>
+        <select name="compare_year" style="margin-bottom: 4px;">
+          {% for y in years %}
+            <option value="{{ y }}" {% if y == compare_year %}selected{% endif %}>{{ y }}</option>
+          {% endfor %}
+        </select>
+        <select name="compare_month">
+          {% for m in months %}
+            <option value="{{ m }}" {% if m == compare_month %}selected{% endif %}>{{ m }}月</option>
+          {% endfor %}
+        </select>
+      </form>
+    </th>
+
+    <!-- 増減 -->
+    <th>増減</th>
+
+    <!-- 増減率 -->
+    <th>増減率</th>
+  </tr>
+</thead>
+
+
+        
+       </tr>
+        </thead>
+        <tbody>
+          <tr>
+        <td>総合計作業時間</td>
+        <td>{{ current_total|default:"-" }}</td>
+        <td>{{ compare_total|default:"-" }}</td>
+        <td>{{ comparison.diff_total|default:"-" }}</td>
+        <td>{{ comparison.rate_total|default:"-" }}</td>
+      </tr>
+      <tr>
+        <td>総平均作業時間</td>
+        <td>{{ current_average|default:"-" }}</td>
+        <td>{{ compare_average|default:"-" }}</td>
+        <td>{{ comparison.diff_avg|default:"-" }}</td>
+        <td>{{ comparison.rate_avg|default:"-" }}</td>
+      </tr>
+      <tr>
+        <td>総件数</td>
+        <td>{{ current.count|default:"-" }}</td>
+        <td>{{ compare.count|default:"-" }}</td>
+        <td>{{ comparison.diff_count|default:"-" }}</td>
+        <td>{{ comparison.rate_count|default:"-" }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+  <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+    <a href="{% url 'report_list' %}?year={{ selected_year }}&month={{ selected_month }}" style="
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #172b5d;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;">
+        戻る
+    </a>
+
+    <a href="{% url 'home' %}" style="
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #172b5d;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;">
+        ホームに戻る
+    </a>
+  </div>
+
+<script>
+  window.addEventListener("beforeunload", function () {
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+  });
+
+  window.addEventListener("load", function () {
+    const scrollY = sessionStorage.getItem("scrollPosition");
+    if (scrollY !== null) {
+      window.scrollTo(0, parseInt(scrollY));
+    }
+  });
+</script>
+
+{% endblock %}
