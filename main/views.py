@@ -339,8 +339,9 @@ def report_comparison(request):
     from datetime import datetime, timedelta
 
     # ✅ 今月（selected_○○）
-    selected_year = int(request.GET.get('target_year', datetime.now().year))
-    selected_month = int(request.GET.get('target_month', datetime.now().month))
+    selected_year = int(request.GET.get('target_year') or request.GET.get('selected_year') or datetime.now().year)
+    selected_month = int(request.GET.get('target_month') or request.GET.get('selected_month') or datetime.now().month)
+
     
     compare_year = int(request.GET.get('compare_year', selected_year))
     compare_month = int(request.GET.get('compare_month', selected_month - 1 or 12))

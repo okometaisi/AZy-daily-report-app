@@ -25,15 +25,15 @@
 
 <div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 20px;">
   <!-- 右：戻る（JavaScript） -->
-  <a href="javascript:history.back()" style="
-      background-color: #172b5d;
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;">
-      戻る
-  </a>
+ <a href="{% url 'report_list' %}?year={{ selected_year }}&month={{ selected_month }}" style="
+     background-color: #172b5d;
+     color: white;
+     padding: 8px 16px;
+     text-decoration: none;
+     border-radius: 6px;
+     font-weight: bold;">
+     戻る
+</a>
   <!-- 左：ホームに戻る -->
   <a href="{% url 'home' %}" style="
       background-color: #172b5d;
@@ -104,7 +104,7 @@
 
     <!-- 比較プルダウン＋ボタン（赤枠に入れるやつ） -->
     <th>
-      <form method="get" style="display: flex; flex-direction: column; align-items: center;">
+      <form method="get" action="#comparison" style="display: flex; flex-direction: column; align-items: center;">
         <!-- 今月を hidden で送る -->
         <input type="hidden" name="selected_year" value="{{ selected_year }}">
         <input type="hidden" name="selected_month" value="{{ selected_month }}">
