@@ -149,3 +149,65 @@ form {
     margin: 0 auto;
     padding: 15px;
 }
+
+/* スマホ対応（画面幅768px以下） */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .styled-table {
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .styled-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .styled-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  th, td {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .button-row {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  form select, form button {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #backToTop {
+    bottom: 15px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}
