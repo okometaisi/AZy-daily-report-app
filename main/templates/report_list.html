@@ -124,31 +124,22 @@
                 {% endfor %}
                 <div>
                
-                  <a href="{% url 'report_comparison' %}?selected_year={{ selected_year }}&selected_month={{ selected_month }}"
-                     style="display: inline-block;
-                            padding: 8px 16px;
-                            background-color: #172b5d;
-                            color: white;
-                            border-radius: 6px;
-                            text-decoration: none;
-                            font-weight: bold;">
-                        日報集計を見る
+                  <a href="{% url 'report_comparison' %}?target_year={{ selected_year }}&target_month={{ selected_month }}#top"
+                     style="display: inline-block; padding: 8px 16px; background-color: #172b5d; color: white;
+                            border-radius: 6px; text-decoration: none; font-weight: bold;">
+                     日報集計を見る
                   </a>
 
 
-                
-
-                        
-                    
-                    <a href="{% url 'report_comparison' %}?compare_year={{ selected_year }}&compare_month={{ selected_month }}"
-                        style="display: inline-block;
-                                padding: 8px 16px;
-                                background-color: #172b5d;
-                                color: white;
-                                border-radius: 6px;
-                                text-decoration: none;
-                                font-weight: bold;">
-                        月別作業比較を見る
+                    <a href="{% url 'report_comparison' %}?target_year={{ selected_year }}&target_month={{ selected_month }}#comparison"
+                       style="display: inline-block;
+                              padding: 8px 16px;
+                              background-color: #172b5d;
+                              color: white;
+                              border-radius: 6px;
+                              text-decoration: none;
+                              font-weight: bold;">
+                       月別作業比較を見る
                     </a>
 
                     <a href="{% url 'home' %}" style="

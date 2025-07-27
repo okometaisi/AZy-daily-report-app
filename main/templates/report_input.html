@@ -95,10 +95,59 @@
 
         <button type="submit">送信</button>
 
+        <button type="button" id="resetButton">🧹 リセット</button>
+
+
         <div class="back">
             <a href="{% url 'home' %}">← ホームに戻る</a>
         </div>
     </form>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const fields = ['date', 'company', 'product', 'task', 'start_time', 'end_time', 'memo'];
+
+      // 復元処理
+      fields.forEach(id => {
+        const saved = localStorage.getItem(id);
+        if (saved !== null) {
+          const el = document.getElementById(id);
+          if (el) el.value = saved;
+        }
+      });
+
+    // 入力保存
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', () => {
+          localStorage.setItem(id, el.value);
+        });
+      }
+    });
+
+    // フォーム送信時に削除
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', () => {
+        fields.forEach(id => localStorage.removeItem(id));
+      });
+    }
+
+    // 🔁 リセットボタンで削除＋空にする
+    const resetButton = document.getElementById('resetButton');
+    if (resetButton) {
+      resetButton.addEventListener('click', () => {
+        fields.forEach(id => {
+          localStorage.removeItem(id);
+          const el = document.getElementById(id);
+          if (el) el.value = '';
+        });
+      });
+    }
+    });
+    </script>
+
+
 </body>
 </html>
 

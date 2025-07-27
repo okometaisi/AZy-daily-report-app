@@ -1,6 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<style>
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 100;
+  font-size: 20px;
+  background-color: #172b5d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+#backToTop:hover {
+  background-color: #0d1a3a;
+}
+</style>
+
 <div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 20px;">
   <!-- 右：戻る（JavaScript） -->
   <a href="javascript:history.back()" style="
@@ -29,7 +51,7 @@
 <div class="container">
   <h1>{{ selected_year }}年 {{ selected_month }}月 作業比較</h1>
 
-  <h2>会社・商品ごとの作業時間</h2>
+  <h2 id="summary">会社・商品ごとの作業時間</h2>
   {% if summary_data %}
     <table>
       <tr><th>会社</th><th>商品</th><th>合計</th><th>平均</th><th>件数</th></tr>
@@ -64,7 +86,7 @@
     <p>task_data は空です。</p>
   {% endif %}
 
-  <h2>月別作業比較</h2>
+  <h2 id="comparison">月別作業比較</h2>
   <table>
     <thead>
        <tr>
@@ -163,6 +185,8 @@
         ホームに戻る
     </a>
   </div>
+  
+  <button id="backToTop" title="ページトップへ">↑</button>
 
 <script>
   window.addEventListener("beforeunload", function () {
@@ -170,11 +194,27 @@
   });
 
   window.addEventListener("load", function () {
+    if (window.location.hash) return;
+
     const scrollY = sessionStorage.getItem("scrollPosition");
     if (scrollY !== null) {
       window.scrollTo(0, parseInt(scrollY));
     }
   });
 </script>
+
+<!-- トップに戻るボタンの動作 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById("backToTop");
+    window.addEventListener("scroll", function () {
+      btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+    });
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+
 
 {% endblock %}
