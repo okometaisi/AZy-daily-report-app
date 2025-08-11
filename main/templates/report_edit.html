@@ -90,8 +90,36 @@
             {% endfor %}
         </select>
 
-        <label for="task">作業内容:</label>
+        <!-- 🧩 作業テンプレート（追加） -->
+        <label for="task_preset">🧩 作業テンプレート:</label>
+        <select id="task_preset" name="task_preset">
+        <option value="">（テンプレを選択）</option>
+        {% for p in presets %}
+            <option value="{{ p.id }}"
+                    data-content="{{ p.content|escapejs }}"
+                    data-product="{{ p.product|default_if_none:'' }}">
+            {{ p.product|default:"共通" }}｜{{ p.label }}
+            </option>
+        {% endfor %}
+        </select>
+
+
+
+        <!-- 作業内容（選択式） -->
+        <label for="task_fk">📋 作業内容（選択）:</label>
+        <select id="task_fk" name="task_fk">
+            <option value="">（選択してください）</option>
+            {% for t in tasks %}
+                <option value="{{ t.id }}" {% if report.task_fk and report.task_fk.id == t.id %}selected{% endif %}>
+                    {{ t.name }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <!-- 作業内容（自由入力） -->
+        <label for="task">📝 作業内容（自由入力）:</label>
         <input type="text" name="task" value="{{ report.task }}">
+
 
         <label for="start_time">開始時間:</label>
         <select name="start_time">
@@ -114,6 +142,52 @@
     </form>
 
     <a href="{% url 'report_list' %}">戻る</a>
+
+    <!-- ここから下を </body> の直前に貼る -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // \u000a みたいな文字を本物の改行などに戻す
+    function decodeJsString(s){
+        try { return JSON.parse('"' + String(s).replace(/"/g, '\\"') + '"'); }
+        catch { return s; }
+    }
+
+    // 各フィールドをつかまえる
+    const productSel = document.querySelector('select[name="product"]');           // 商品名
+    const presetSel  = document.getElementById('task_preset');                     // 作業テンプレ
+    const taskField  = document.querySelector('input[name="task"], textarea[name="task"]'); // 作業内容（自由入力）
+
+    // 商品でテンプレを絞り込む（product が空のテンプレは共通＝常に表示）
+    function filterPresets() {
+        if (!presetSel) return;
+        const prod = (productSel?.value || '').trim();
+        Array.from(presetSel.options).forEach(opt => {
+        if (!opt.value) { opt.hidden = false; return; } // 先頭の案内は常に表示
+        const target = (opt.dataset.product || '').trim();
+        opt.hidden = (target && target !== prod);
+        });
+        // 商品変更時は一旦未選択に
+        presetSel.value = '';
+    }
+
+    // テンプレを選んだら task に内容を流し込む
+    if (presetSel && taskField) {
+        presetSel.addEventListener('change', () => {
+        const raw = presetSel.selectedOptions[0]?.dataset.content || '';
+        const decoded = decodeJsString(raw).replace(/\r\n/g, '\n');
+        taskField.value = decoded;
+        });
+    }
+
+    // 初期表示時と商品変更時に絞り込み
+    if (productSel && presetSel) {
+        productSel.addEventListener('change', filterPresets);
+        filterPresets();
+    }
+    });
+    </script>
+<!-- ここまで -->
+
 </body>
 </html>
 

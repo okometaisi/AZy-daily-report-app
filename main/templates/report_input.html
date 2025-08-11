@@ -77,8 +77,30 @@
             {% endfor %}
         </select>
 
-        <label for="task">📝 作業内容:</label>
-        <textarea id="task" name="task" rows="3" required></textarea>
+        <!-- 作業内容（選択式） -->
+        <label for="task_fk">📋 作業内容（選択）:</label>
+        <select id="task_fk" name="task_fk">
+            <option value="">（選択してください）</option>
+            {% for t in tasks %}
+                <option value="{{ t.id }}">{{ t.name }}</option>
+            {% endfor %}
+        </select>
+        
+        <label for="task_preset">🧩 作業テンプレート:</label>
+        <select id="task_preset" name="task_preset">
+          <option value="">（テンプレを選択）</option>
+          {% for p in presets %}
+            <option value="{{ p.id }}"
+                    data-content="{{ p.content|escapejs }}"
+                    data-product="{{ p.product|default_if_none:'' }}">
+              {{ p.product|default:"共通" }}｜{{ p.label }}
+            </option>
+          {% endfor %}
+        </select>
+
+        <!-- 作業内容（自由入力） -->
+        <label for="task">📝 作業内容（自由入力）:</label>
+        <textarea id="task" name="task" rows="4">{{ report.task }}</textarea>
 
           <label for="start_time">⏰ 開始時間:</label>
           <input type="time" id="start_time" name="start_time" class="form-control" step="300">
@@ -86,9 +108,6 @@
           <label for="end_time">⏰ 終了時間:</label>
           <input type="time" id="end_time" name="end_time" class="form-control" step="300">
 
-
-
-        </select>
 
         <label for="memo">💬 メモ:</label>
         <textarea id="memo" name="memo" rows="2"></textarea>
@@ -102,50 +121,52 @@
             <a href="{% url 'home' %}">← ホームに戻る</a>
         </div>
     </form>
+
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const fields = ['date', 'company', 'product', 'task', 'start_time', 'end_time', 'memo'];
+      // ← この中に入れる（scriptの外に出さない）
 
-      // 復元処理
-      fields.forEach(id => {
-        const saved = localStorage.getItem(id);
-        if (saved !== null) {
-          const el = document.getElementById(id);
-          if (el) el.value = saved;
-        }
-      });
+      // \u000a みたいなエスケープ文字列を本物に戻す
+      function decodeJsString(s){
+        try { return JSON.parse('"' + String(s).replace(/"/g, '\\"') + '"'); }
+        catch { return s; }
+      }
 
-    // 入力保存
-    fields.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.addEventListener('input', () => {
-          localStorage.setItem(id, el.value);
+      // === 作業テンプレ：商品と連動 + 選択で task に反映 ===
+      const productSel = document.querySelector('select[name="product"]');
+      const presetSel  = document.getElementById('task_preset');
+      const taskField  = document.querySelector('textarea[name="task"], input[name="task"]');
+
+      function filterPresets() {
+        if (!presetSel) return;
+        const prod = (productSel?.value || '').trim();
+        Array.from(presetSel.options).forEach(opt => {
+          if (!opt.value) { opt.hidden = false; return; }   // 先頭の案内は常に表示
+          const target = (opt.dataset.product || '').trim(); // 空＝共通
+          opt.hidden = (target && target !== prod);
+        });
+        presetSel.value = ''; // 商品変更時は未選択へ
+      }
+
+      if (presetSel && taskField) {
+        presetSel.addEventListener('change', () => {
+          const raw = presetSel.selectedOptions[0]?.dataset.content || '';
+          const decoded = decodeJsString(raw).replace(/\r\n/g, '\n');
+          taskField.value = decoded;
+
+          // 任意：ローカル保存を使っている場合の上書き対策
+          try { localStorage.setItem('task', decoded); } catch(e) {}
+          taskField.dispatchEvent(new Event('input', { bubbles: true }));
         });
       }
-    });
 
-    // フォーム送信時に削除
-    const form = document.querySelector('form');
-    if (form) {
-      form.addEventListener('submit', () => {
-        fields.forEach(id => localStorage.removeItem(id));
-      });
-    }
-
-    // 🔁 リセットボタンで削除＋空にする
-    const resetButton = document.getElementById('resetButton');
-    if (resetButton) {
-      resetButton.addEventListener('click', () => {
-        fields.forEach(id => {
-          localStorage.removeItem(id);
-          const el = document.getElementById(id);
-          if (el) el.value = '';
-        });
-      });
-    }
+      if (productSel && presetSel) {
+        productSel.addEventListener('change', filterPresets);
+        filterPresets(); // 初期絞り込み
+      }
     });
-    </script>
+</script>
+
 
 
 </body>

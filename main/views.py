@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.utils.dateparse import parse_time
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseBadRequest
 from django.db.models import Count
@@ -7,8 +6,7 @@ from django.db.models import Count
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-from .models import DailyReport
-from .charts import generate_task_pie_chart
+from .models import DailyReport, Task, TaskPreset
 from .utils import parse_time, format_timedelta
 from main.utils import summarize_reports, generate_monthly_comparison
 
@@ -123,88 +121,55 @@ def format_duration_data(group_dict):
 def home(request):
     return render(request, 'home.html')
 
+# ② report_input（置き換え）
 def report_input(request):
     if request.method == 'POST':
         date = request.POST.get('date')
         company = request.POST.get('company')
         product = request.POST.get('product')
-        task = request.POST.get('task')
+        task_text = request.POST.get('task')  # 既存の手入力も保持
         start_time = parse_time(request.POST.get('start_time'))
         end_time = parse_time(request.POST.get('end_time'))
         memo = request.POST.get('memo')
 
-        # 作業時間を自動計算する
+        # 追加：選択式（task_fk）
+        task_fk_id = request.POST.get('task_fk')
+        task_fk = Task.objects.filter(id=task_fk_id).first() if task_fk_id else None
+
+        # 作業時間の自動計算
         if start_time and end_time:
             start_dt = datetime.combine(datetime.today(), start_time)
             end_dt = datetime.combine(datetime.today(), end_time)
-            if end_dt > start_dt:
-                duration = end_dt - start_dt
-            else:
-                duration = None  # 終了が開始より早いときは無効
+            duration = end_dt - start_dt if end_dt > start_dt else None
         else:
-            duration = None  # 時刻が未入力のとき
+            duration = None
 
-        # モデルへ保存
+        # 保存（選択があれば旧textにも反映しておくと表示が揃って便利）
         DailyReport.objects.create(
             date=date,
             company=company,
             product=product,
-            task=task,
+            task=(task_fk.name if task_fk else task_text),
+            task_fk=task_fk,
             start_time=start_time,
             end_time=end_time,
             memo=memo,
-            作業時間=duration  
+            作業時間=duration
         )
-
         return redirect('home')
 
     context = {
         'company_choices': COMPANY_CHOICES,
         'product_choices': PRODUCT_CHOICES,
         'time_choices': TIME_CHOICES,
+        'tasks': Task.objects.all().order_by('name'),  # プルダウン用
+        'presets': TaskPreset.objects.filter(is_active=True).order_by('sort_order', 'label'),
     }
     return render(request, 'report_input.html', context)
 
 
-def report_list(request):
-    years = list(range(2023, 2027))
-    months = list(range(1, 13))
-    days = list(range(1, 32))  
 
-    selected_year = request.GET.get('year')
-    selected_month = request.GET.get('month')
-    selected_day = request.GET.get('day')  
-
-    if selected_year and selected_month:
-        reports = DailyReport.objects.filter(
-            date__year=selected_year,
-            date__month=selected_month
-        )
-        if selected_day:
-            reports = reports.filter(date__day=selected_day)  # ←★日が選ばれてたら、さらに絞り込む！
-        reports = reports.order_by('date')
-    else:
-        today = datetime.today()
-        selected_year = today.year
-        selected_month = today.month
-        selected_day = None
-        reports = DailyReport.objects.filter(
-            date__year=selected_year,
-            date__month=selected_month
-        ).order_by('date')
-
-    context = {
-        'years': years,
-        'months': months,
-        'days': days,  # ←★テンプレートに渡す！
-        'selected_year': int(selected_year),
-        'selected_month': int(selected_month),
-        'selected_day': int(selected_day) if selected_day else None,  # ←★テンプレートで使う！
-        'reports': reports
-    }
-    return render(request, 'report_list.html', context)
-
-
+# ③ report_edit（置き換え）
 def report_edit(request, report_id):
     report = get_object_or_404(DailyReport, pk=report_id)
 
@@ -219,20 +184,31 @@ def report_edit(request, report_id):
 
         report.company = request.POST.get('company')
         report.product = request.POST.get('product')
-        report.task = request.POST.get('task')
+        # 既存のテキスト入力
+        task_text = request.POST.get('task')
+
+        # 追加：選択式（task_fk）
+        task_fk_id = request.POST.get('task_fk')
+        report.task_fk = Task.objects.filter(id=task_fk_id).first() if task_fk_id else None
+
+        # 同期：選択があれば task（文字列）も合わせる
+        report.task = report.task_fk.name if report.task_fk else task_text
+
         report.start_time = parse_time(request.POST.get('start_time'))
         report.end_time = parse_time(request.POST.get('end_time'))
         report.memo = request.POST.get('memo')
 
-        # ✅ 作業時間を再計算！
+        # 作業時間の再計算
         if report.start_time and report.end_time:
             start = datetime.combine(datetime.today(), report.start_time)
             end = datetime.combine(datetime.today(), report.end_time)
             report.作業時間 = end - start
+        else:
+            report.作業時間 = None
 
         report.save()
 
-        # 💡 編集後も同じ月へ戻る
+        # 編集後も同じ月へ戻る処理（元のロジックのまま）
         year = request.GET.get('year')
         month = request.GET.get('month')
         if year and month:
@@ -244,8 +220,44 @@ def report_edit(request, report_id):
         'company_choices': COMPANY_CHOICES,
         'product_choices': PRODUCT_CHOICES,
         'time_choices': TIME_CHOICES,
+        'tasks': Task.objects.all().order_by('name'),  # プルダウン用
+        'presets': TaskPreset.objects.filter(is_active=True).order_by('sort_order', 'label'),
     }
     return render(request, 'report_edit.html', context)
+
+def report_list(request):
+    years = list(range(2023, 2027))
+    months = list(range(1, 13))
+    days = list(range(1, 32))  # 日付フィルタ用
+
+    selected_year = request.GET.get('year')
+    selected_month = request.GET.get('month')
+    selected_day = request.GET.get('day')
+
+    if selected_year and selected_month:
+        qs = DailyReport.objects.filter(date__year=selected_year, date__month=selected_month)
+        if selected_day:
+            qs = qs.filter(date__day=selected_day)
+        reports = qs.order_by('date')
+    else:
+        today = datetime.today()
+        selected_year = today.year
+        selected_month = today.month
+        selected_day = None
+        reports = DailyReport.objects.filter(date__year=selected_year, date__month=selected_month).order_by('date')
+
+    context = {
+        'years': years,
+        'months': months,
+        'days': days,
+        'selected_year': int(selected_year),
+        'selected_month': int(selected_month),
+        'selected_day': int(selected_day) if selected_day else None,
+        'reports': reports,
+    }
+    return render(request, 'report_list.html', context)
+
+
 
 
 
