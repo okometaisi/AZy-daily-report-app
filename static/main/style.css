@@ -1,0 +1,11 @@
+/* main/style.css に追加する内容 */
+thead th {
+    color: white;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+    font-size: 1.5em;  /* お好みで調整OK */
+    margin-top: 30px;
+}

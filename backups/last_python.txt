@@ -1,0 +1,2 @@
+Using: C:\Users\pocop\AppData\Local\Programs\Python\Python312\python.exe 
+Python 3.12.7

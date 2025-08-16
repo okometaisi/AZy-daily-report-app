@@ -1,0 +1,2792 @@
+﻿[
+{
+  "model": "main.dailyreport",
+  "pk": 8,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 9,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 10,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 11,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 12,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 13,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 14,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 15,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 16,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 17,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 18,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 19,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 20,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 21,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 22,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 23,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 24,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 25,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 26,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 27,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 28,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 29,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 30,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 31,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 32,
+  "fields": {
+    "date": "2025-01-01",
+    "company": "未設定",
+    "product": "未設定",
+    "task": "未設定",
+    "task_fk": null,
+    "start_time": "05:30:00",
+    "end_time": "05:31:00",
+    "memo": "",
+    "作業時間": "00:01:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 107,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "自社",
+    "product": "その他",
+    "task": "片付け",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "06:50:00",
+    "memo": "なにしたか覚えていない",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 108,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　段取り",
+    "task_fk": null,
+    "start_time": "06:50:00",
+    "end_time": "07:35:00",
+    "memo": "シェル１製番目",
+    "作業時間": "00:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 109,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ",
+    "task_fk": null,
+    "start_time": "07:40:00",
+    "end_time": "10:15:00",
+    "memo": "シェル１製番目",
+    "作業時間": "02:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 110,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　計測　刻印　梱包",
+    "task_fk": null,
+    "start_time": "10:15:00",
+    "end_time": "16:00:00",
+    "memo": "シェル１製番目",
+    "作業時間": "05:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 111,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　片付け",
+    "task_fk": null,
+    "start_time": "16:05:00",
+    "end_time": "16:30:00",
+    "memo": "シェル１製番目",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 112,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　補修",
+    "task_fk": null,
+    "start_time": "16:30:00",
+    "end_time": "16:45:00",
+    "memo": "レセプタクル×２",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 113,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　段取り",
+    "task_fk": null,
+    "start_time": "16:50:00",
+    "end_time": "17:20:00",
+    "memo": "シェル２製番目",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 114,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ",
+    "task_fk": null,
+    "start_time": "17:20:00",
+    "end_time": "18:00:00",
+    "memo": "シェル２製番目　直角検査終わってないため中断",
+    "作業時間": "00:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 115,
+  "fields": {
+    "date": "2025-06-23",
+    "company": "トーヨーエイテック",
+    "product": "ブロックLR",
+    "task": "ブロックLR　準備　手入れ　計測　梱包",
+    "task_fk": null,
+    "start_time": "18:00:00",
+    "end_time": "19:30:00",
+    "memo": "ブロックLR×１",
+    "作業時間": "01:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 116,
+  "fields": {
+    "date": "2025-06-24",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ　計測　刻印　梱包",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "14:45:00",
+    "memo": "シェル　２製番目",
+    "作業時間": "08:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 117,
+  "fields": {
+    "date": "2025-06-24",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　段取り",
+    "task_fk": null,
+    "start_time": "14:45:00",
+    "end_time": "15:10:00",
+    "memo": "シェル　３製番目",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 118,
+  "fields": {
+    "date": "2025-06-24",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ",
+    "task_fk": null,
+    "start_time": "15:10:00",
+    "end_time": "19:30:00",
+    "memo": "シェル　３製番目",
+    "作業時間": "04:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 119,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ　計測　刻印　梱包",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "09:45:00",
+    "memo": "シェル　３製番目",
+    "作業時間": "03:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 120,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　片付け",
+    "task_fk": null,
+    "start_time": "10:45:00",
+    "end_time": "11:10:00",
+    "memo": "シェル　３製番目",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 121,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　梱包",
+    "task_fk": null,
+    "start_time": "11:15:00",
+    "end_time": "12:00:00",
+    "memo": "一旦お昼を挟んでいる",
+    "作業時間": "00:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 122,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "13:40:00",
+    "memo": "レセプタクル×２",
+    "作業時間": "00:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 123,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "日本製鋼所",
+    "product": "JSW130小物",
+    "task": "JSW130小物　段取り",
+    "task_fk": null,
+    "start_time": "13:40:00",
+    "end_time": "14:10:00",
+    "memo": "JSW130小物×２",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 124,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "日本製鋼所",
+    "product": "JSW130小物",
+    "task": "JSW130小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "14:20:00",
+    "end_time": "16:20:00",
+    "memo": "JSW130小物×２",
+    "作業時間": "02:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 125,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "日本製鋼所",
+    "product": "JSW130小物",
+    "task": "JSW130小物　片付け",
+    "task_fk": null,
+    "start_time": "16:20:00",
+    "end_time": "16:40:00",
+    "memo": "JSW130小物×２",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 126,
+  "fields": {
+    "date": "2025-06-25",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　段取り",
+    "task_fk": null,
+    "start_time": "16:45:00",
+    "end_time": "17:30:00",
+    "memo": "シェル４製番目",
+    "作業時間": "00:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 127,
+  "fields": {
+    "date": "2025-06-26",
+    "company": "トーヨーエイテック",
+    "product": "シェル",
+    "task": "シェル　手入れ　計測　刻印　梱包",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "16:10:00",
+    "memo": "シェル４製番目　品物できていなくてロスタイムが発生している！",
+    "作業時間": "09:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 128,
+  "fields": {
+    "date": "2025-06-26",
+    "company": "日本製鋼所",
+    "product": "JSW130大物",
+    "task": "JSW130大物　梱包",
+    "task_fk": null,
+    "start_time": "16:10:00",
+    "end_time": "19:15:00",
+    "memo": "JSW130大物×２",
+    "作業時間": "03:05:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 129,
+  "fields": {
+    "date": "2025-06-26",
+    "company": "日本製鋼所",
+    "product": "JSW130大物",
+    "task": "JSW130大物　片付け",
+    "task_fk": null,
+    "start_time": "19:05:00",
+    "end_time": "19:30:00",
+    "memo": "JSW130大物×２",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 130,
+  "fields": {
+    "date": "2025-06-27",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　段取り",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "07:00:00",
+    "memo": "JSW180大物×２",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 131,
+  "fields": {
+    "date": "2025-06-27",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "16:00:00",
+    "memo": "JSW180大物×２　塗料乾燥の為いったん終了",
+    "作業時間": "09:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 132,
+  "fields": {
+    "date": "2025-06-27",
+    "company": "長浜製作所",
+    "product": "ベッドL＝2000",
+    "task": "長浜製作所　補修",
+    "task_fk": null,
+    "start_time": "18:40:00",
+    "end_time": "19:05:00",
+    "memo": "メタルパテ補修×１",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 133,
+  "fields": {
+    "date": "2025-06-27",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　刻印準備",
+    "task_fk": null,
+    "start_time": "19:05:00",
+    "end_time": "19:30:00",
+    "memo": "JSW180大物×２",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 134,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "その他",
+    "task": "JSW　積み荷下ろし",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "08:55:00",
+    "memo": "JSW　素材",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 135,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "富士機械",
+    "product": "インアウトフィードフレーム",
+    "task": "インアウトフィードフレーム　補修",
+    "task_fk": null,
+    "start_time": "08:55:00",
+    "end_time": "09:05:00",
+    "memo": "インアウトフィードフレーム×４　パテ削り終わり",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 136,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　刻印",
+    "task_fk": null,
+    "start_time": "09:10:00",
+    "end_time": "10:35:00",
+    "memo": "JSW180大物×２",
+    "作業時間": "01:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 137,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:25:00",
+    "end_time": "09:55:00",
+    "memo": "JSW180大物×2",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 138,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　段取り",
+    "task_fk": null,
+    "start_time": "10:10:00",
+    "end_time": "10:35:00",
+    "memo": "JSW180小物×２",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 139,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:35:00",
+    "end_time": "12:00:00",
+    "memo": "JSW180小物×2",
+    "作業時間": "01:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 140,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "13:35:00",
+    "memo": "JSW180小物×2",
+    "作業時間": "00:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 141,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　片付け",
+    "task_fk": null,
+    "start_time": "13:35:00",
+    "end_time": "13:50:00",
+    "memo": "JSW180小物×2",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 142,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　梱包",
+    "task_fk": null,
+    "start_time": "13:50:00",
+    "end_time": "16:05:00",
+    "memo": "JSW180小物×2　トラック積み込み途中中断",
+    "作業時間": "02:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 143,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "自社",
+    "product": "自社トラック積み込み",
+    "task": "トラック積み込み",
+    "task_fk": null,
+    "start_time": "16:05:00",
+    "end_time": "16:15:00",
+    "memo": "何かを積み込んだ！",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 144,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　梱包",
+    "task_fk": null,
+    "start_time": "16:15:00",
+    "end_time": "17:25:00",
+    "memo": "JSW180大物×2",
+    "作業時間": "01:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 145,
+  "fields": {
+    "date": "2025-06-30",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　片付け",
+    "task_fk": null,
+    "start_time": "17:40:00",
+    "end_time": "18:00:00",
+    "memo": "JSW180大物×2　18：00退社",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 146,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "コンテナ",
+    "product": "コンテナ積み荷おろし",
+    "task": "コンテナ　積み下ろし",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "10:20:00",
+    "memo": "",
+    "作業時間": "01:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 147,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "日本製鋼所",
+    "product": "JSW130出荷",
+    "task": "JSW130　出荷　積み込み",
+    "task_fk": null,
+    "start_time": "10:20:00",
+    "end_time": "10:40:00",
+    "memo": "JSW130×2",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 148,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "富士機械",
+    "product": "インアウトフィードフレーム",
+    "task": "インアウトフィードフレーム　手入れ　塗装　梱包",
+    "task_fk": null,
+    "start_time": "10:45:00",
+    "end_time": "16:00:00",
+    "memo": "インアウトフィードフレーム×4",
+    "作業時間": "05:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 149,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "富士機械",
+    "product": "フィードフレーム",
+    "task": "フィードフレーム　手入れ　塗装　梱包",
+    "task_fk": null,
+    "start_time": "16:00:00",
+    "end_time": "18:35:00",
+    "memo": "フィードフレーム×2",
+    "作業時間": "02:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 150,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "トーヨーエイテック",
+    "product": "事務",
+    "task": "事務　検査記録",
+    "task_fk": null,
+    "start_time": "18:25:00",
+    "end_time": "18:35:00",
+    "memo": "何したか忘れた",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 151,
+  "fields": {
+    "date": "2025-07-01",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　段取り",
+    "task_fk": null,
+    "start_time": "18:40:00",
+    "end_time": "19:30:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 152,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　段取り",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "08:55:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 153,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　手入れ　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:55:00",
+    "end_time": "11:10:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "02:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 154,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　片付け",
+    "task_fk": null,
+    "start_time": "11:10:00",
+    "end_time": "12:00:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 155,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　手入れ　清掃　塗装",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "16:36:00",
+    "memo": "レセプタクル×2",
+    "作業時間": "03:36:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 156,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　片付け",
+    "task_fk": null,
+    "start_time": "16:35:00",
+    "end_time": "17:10:00",
+    "memo": "レセプタクル×2",
+    "作業時間": "00:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 157,
+  "fields": {
+    "date": "2025-07-02",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　段取り",
+    "task_fk": null,
+    "start_time": "17:10:00",
+    "end_time": "17:30:00",
+    "memo": "JSW100大物×2",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 158,
+  "fields": {
+    "date": "2025-07-03",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "19:00:00",
+    "memo": "JSW100大物×2　タップ不良ありタイムロスあり",
+    "作業時間": "10:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 159,
+  "fields": {
+    "date": "2025-07-03",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　梱包準備",
+    "task_fk": null,
+    "start_time": "19:00:00",
+    "end_time": "19:10:00",
+    "memo": "レセプタクル×2",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 160,
+  "fields": {
+    "date": "2025-07-03",
+    "company": "日本製鋼所",
+    "product": "JSW180出荷",
+    "task": "JSW180　出荷準備",
+    "task_fk": null,
+    "start_time": "19:10:00",
+    "end_time": "19:30:00",
+    "memo": "JSW180×2",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 161,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "日本製鋼所",
+    "product": "JSW180出荷",
+    "task": "JSW180　出荷積み込み",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:05:00",
+    "memo": "JSW180×2\r\n",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 162,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　梱包",
+    "task_fk": null,
+    "start_time": "09:05:00",
+    "end_time": "11:00:00",
+    "memo": "レセプタクル×2",
+    "作業時間": "01:55:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 163,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "11:15:00",
+    "end_time": "12:00:00",
+    "memo": "JSW100大物×2",
+    "作業時間": "00:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 164,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "15:15:00",
+    "memo": "JSW100大物×2　タップ不良ありロスタイムあり",
+    "作業時間": "02:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 165,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "15:15:00",
+    "end_time": "19:05:00",
+    "memo": "JSW100小物×2",
+    "作業時間": "03:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 166,
+  "fields": {
+    "date": "2025-07-04",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　片付け",
+    "task_fk": null,
+    "start_time": "19:05:00",
+    "end_time": "19:30:00",
+    "memo": "JSW100小物×2",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 169,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "コンテナ",
+    "product": "その他",
+    "task": "コンテナ　積み下ろし",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:50:00",
+    "memo": "",
+    "作業時間": "01:05:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 170,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "その他",
+    "product": "その他",
+    "task": "休憩",
+    "task_fk": null,
+    "start_time": "09:50:00",
+    "end_time": "10:10:00",
+    "memo": "体調悪かった",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 171,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "自社",
+    "product": "自社トラック積み込み",
+    "task": "積み込み",
+    "task_fk": null,
+    "start_time": "10:10:00",
+    "end_time": "10:25:00",
+    "memo": "積み込み",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 172,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　段取り",
+    "task_fk": null,
+    "start_time": "10:25:00",
+    "end_time": "10:50:00",
+    "memo": "",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 173,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:50:00",
+    "end_time": "15:45:00",
+    "memo": "カタジメ×１不良交換最初からやり直し",
+    "作業時間": "04:55:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 174,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "自社",
+    "product": "自社トラック積み込み",
+    "task": "トラック積み込み\r\n",
+    "task_fk": null,
+    "start_time": "15:45:00",
+    "end_time": "16:00:00",
+    "memo": "",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 175,
+  "fields": {
+    "date": "2025-07-07",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "16:00:00",
+    "end_time": "17:30:00",
+    "memo": "カドウバン×１肉欠けあり。交換最初からやり直し",
+    "作業時間": "01:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 176,
+  "fields": {
+    "date": "2025-07-08",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "14:30:00",
+    "memo": "",
+    "作業時間": "05:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 177,
+  "fields": {
+    "date": "2025-07-08",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　段取り",
+    "task_fk": null,
+    "start_time": "14:30:00",
+    "end_time": "15:00:00",
+    "memo": "",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 178,
+  "fields": {
+    "date": "2025-07-08",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "15:00:00",
+    "end_time": "16:00:00",
+    "memo": "",
+    "作業時間": "01:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 179,
+  "fields": {
+    "date": "2025-07-08",
+    "company": "その他",
+    "product": "その他",
+    "task": "その他",
+    "task_fk": null,
+    "start_time": "16:00:00",
+    "end_time": "16:30:00",
+    "memo": "停電のため、作業中断",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 180,
+  "fields": {
+    "date": "2025-07-08",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "16:30:00",
+    "end_time": "17:00:00",
+    "memo": "警報発令で17:00退社",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 181,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "コンテナ",
+    "product": "コンテナ積み荷おろし",
+    "task": "コンテナ積み下ろし",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:30:00",
+    "memo": "",
+    "作業時間": "00:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 182,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:30:00",
+    "end_time": "11:30:00",
+    "memo": "JSW100小物×２ 錆が多い",
+    "作業時間": "02:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 183,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　かたずけ",
+    "task_fk": null,
+    "start_time": "11:30:00",
+    "end_time": "11:40:00",
+    "memo": "",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 184,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　梱包準備",
+    "task_fk": null,
+    "start_time": "11:40:00",
+    "end_time": "12:00:00",
+    "memo": "",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 185,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "14:50:00",
+    "memo": "",
+    "作業時間": "01:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 186,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "長浜製作所",
+    "product": "ベッドL＝2500",
+    "task": "ベッドL＝2500　段取り",
+    "task_fk": null,
+    "start_time": "15:00:00",
+    "end_time": "15:20:00",
+    "memo": "",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 187,
+  "fields": {
+    "date": "2025-07-09",
+    "company": "長浜製作所",
+    "product": "ベッドL＝2500",
+    "task": "ベッドL＝2500　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "15:20:00",
+    "end_time": "17:30:00",
+    "memo": "定時退社",
+    "作業時間": "02:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 188,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "その他",
+    "product": "その他",
+    "task": "清掃",
+    "task_fk": null,
+    "start_time": "09:45:00",
+    "end_time": "09:05:00",
+    "memo": "",
+    "作業時間": null
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 189,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "長浜製作所",
+    "product": "ベッドL＝2500",
+    "task": "ベッドL＝2500　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:05:00",
+    "end_time": "09:30:00",
+    "memo": "塗装するか回答待作業中断！",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 190,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　不具合検査",
+    "task_fk": null,
+    "start_time": "09:30:00",
+    "end_time": "09:50:00",
+    "memo": "検査だけ",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 191,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　段取り",
+    "task_fk": null,
+    "start_time": "09:50:00",
+    "end_time": "10:15:00",
+    "memo": "JSW180×2",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 192,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:15:00",
+    "end_time": "19:15:00",
+    "memo": "JSW180×2",
+    "作業時間": "09:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 193,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　かたずけ",
+    "task_fk": null,
+    "start_time": "19:15:00",
+    "end_time": "19:25:00",
+    "memo": "",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 194,
+  "fields": {
+    "date": "2025-07-10",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　段取り",
+    "task_fk": null,
+    "start_time": "19:25:00",
+    "end_time": "19:30:00",
+    "memo": "",
+    "作業時間": "00:05:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 195,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100　出荷積み込み",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:15:00",
+    "memo": "",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 196,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:15:00",
+    "end_time": "10:30:00",
+    "memo": "JSW100大物×2",
+    "作業時間": "01:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 197,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100　小物段取り",
+    "task_fk": null,
+    "start_time": "10:30:00",
+    "end_time": "11:00:00",
+    "memo": "JSW100小物×2",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 198,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "11:00:00",
+    "end_time": "14:00:00",
+    "memo": "",
+    "作業時間": "03:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 199,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "その他",
+    "task": "JSWパレットトラック積み下ろし",
+    "task_fk": null,
+    "start_time": "14:00:00",
+    "end_time": "14:15:00",
+    "memo": "",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 200,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "14:15:00",
+    "end_time": "14:40:00",
+    "memo": "",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 201,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "15:10:00",
+    "end_time": "19:00:00",
+    "memo": "JSW100大物×2 カドウバン完成後に不具合発見！1台最初からやり直し！",
+    "作業時間": "03:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 202,
+  "fields": {
+    "date": "2025-07-11",
+    "company": "日本製鋼所",
+    "product": "その他",
+    "task": "JSW木箱整理",
+    "task_fk": null,
+    "start_time": "19:00:00",
+    "end_time": "19:00:00",
+    "memo": "",
+    "作業時間": null
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 203,
+  "fields": {
+    "date": "2025-07-12",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "10:00:00",
+    "memo": "JSW100大物JSW100小物荷札が届いていなかったので、ここで貼り付け梱包終了",
+    "作業時間": "01:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 204,
+  "fields": {
+    "date": "2025-07-12",
+    "company": "長浜製作所",
+    "product": "ベッドL＝2500",
+    "task": "ベッドL＝2500　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:10:00",
+    "end_time": "11:15:00",
+    "memo": "",
+    "作業時間": "01:05:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 205,
+  "fields": {
+    "date": "2025-07-12",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　段取り",
+    "task_fk": null,
+    "start_time": "11:15:00",
+    "end_time": "11:45:00",
+    "memo": "JSW180×2完成品が置いてある場所が遠い。",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 206,
+  "fields": {
+    "date": "2025-07-12",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "11:45:00",
+    "end_time": "17:30:00",
+    "memo": "JSW180大物×2",
+    "作業時間": "05:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 207,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "コンテナ",
+    "product": "コンテナ積み荷おろし",
+    "task": "コンテナ積み下ろし",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:20:00",
+    "memo": "",
+    "作業時間": "00:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 208,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:20:00",
+    "end_time": "10:35:00",
+    "memo": "",
+    "作業時間": "01:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 209,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100　出荷積み込み",
+    "task_fk": null,
+    "start_time": "10:35:00",
+    "end_time": "11:00:00",
+    "memo": "他の積み込み町と室内積み込みの為、時間がかかる。",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 210,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "11:00:00",
+    "end_time": "16:00:00",
+    "memo": "",
+    "作業時間": "05:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 211,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　刻印",
+    "task_fk": null,
+    "start_time": "16:00:00",
+    "end_time": "16:40:00",
+    "memo": "",
+    "作業時間": "00:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 212,
+  "fields": {
+    "date": "2025-07-14",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "16:40:00",
+    "end_time": "17:30:00",
+    "memo": "定時退社",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 213,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　段取り",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:00:00",
+    "memo": "",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 214,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:00:00",
+    "end_time": "11:25:00",
+    "memo": "",
+    "作業時間": "02:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 215,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180小物",
+    "task": "JSW180小物　かたずけ",
+    "task_fk": null,
+    "start_time": "11:25:00",
+    "end_time": "11:35:00",
+    "memo": "雑用あり",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 216,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　梱包　段取り",
+    "task_fk": null,
+    "start_time": "11:35:00",
+    "end_time": "12:00:00",
+    "memo": "",
+    "作業時間": "00:25:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 217,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "16:15:00",
+    "memo": "",
+    "作業時間": "03:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 218,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180大物　かたずけ",
+    "task_fk": null,
+    "start_time": "16:15:00",
+    "end_time": "16:25:00",
+    "memo": "",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 219,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "その他",
+    "product": "その他",
+    "task": "雑用",
+    "task_fk": null,
+    "start_time": "16:25:00",
+    "end_time": "16:40:00",
+    "memo": "手伝い小笠原さん",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 220,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "日本製鋼所",
+    "product": "ターンテーブル",
+    "task": "錆確認",
+    "task_fk": null,
+    "start_time": "16:40:00",
+    "end_time": "17:30:00",
+    "memo": "",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 221,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "自社",
+    "product": "その他",
+    "task": "ボディ耐圧セットトラック積み込み",
+    "task_fk": null,
+    "start_time": "17:40:00",
+    "end_time": "18:00:00",
+    "memo": "間さん依頼耐圧セットを段取り積み込み",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 222,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "不具合報告",
+    "task_fk": null,
+    "start_time": "18:00:00",
+    "end_time": "18:55:00",
+    "memo": "",
+    "作業時間": "00:55:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 223,
+  "fields": {
+    "date": "2025-07-15",
+    "company": "富士機械",
+    "product": "フィードフレーム",
+    "task": "段取り",
+    "task_fk": null,
+    "start_time": "19:00:00",
+    "end_time": "19:30:00",
+    "memo": "フィードフレーム×4",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 224,
+  "fields": {
+    "date": "2025-07-16",
+    "company": "富士機械",
+    "product": "フレーム",
+    "task": "手入れ　検査　",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "16:20:00",
+    "memo": "フレーム×１０",
+    "作業時間": "07:35:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 225,
+  "fields": {
+    "date": "2025-07-17",
+    "company": "富士機械",
+    "product": "フレーム",
+    "task": "手入れ　検査",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "17:30:00",
+    "memo": "フレーム×13",
+    "作業時間": "08:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 226,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100　出荷準備",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:00:00",
+    "memo": "室内で積み込み",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 227,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "富士機械",
+    "product": "フィードフレーム",
+    "task": "フィードフレーム補修",
+    "task_fk": null,
+    "start_time": "09:00:00",
+    "end_time": "10:00:00",
+    "memo": "フィードフレーム×10",
+    "作業時間": "01:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 228,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "富士機械",
+    "product": "フレーム",
+    "task": "手入れ　検査",
+    "task_fk": null,
+    "start_time": "10:10:00",
+    "end_time": "11:00:00",
+    "memo": "",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 229,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100　出荷",
+    "task_fk": null,
+    "start_time": "11:00:00",
+    "end_time": "11:30:00",
+    "memo": "出荷室内",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 230,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100　段取り　",
+    "task_fk": null,
+    "start_time": "11:30:00",
+    "end_time": "11:40:00",
+    "memo": "カタジメのみ×2",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 231,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100 手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:40:00",
+    "end_time": "12:00:00",
+    "memo": "カタジメのみ×2",
+    "作業時間": "01:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 232,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "富士機械",
+    "product": "フィードフレーム",
+    "task": "不具合確認",
+    "task_fk": null,
+    "start_time": "15:00:00",
+    "end_time": "15:40:00",
+    "memo": "",
+    "作業時間": "00:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 233,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "長浜製作所",
+    "product": "フレーム",
+    "task": "フレーム　片付け",
+    "task_fk": null,
+    "start_time": "15:40:00",
+    "end_time": "16:10:00",
+    "memo": "",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 234,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "富士機械",
+    "product": "フィードフレーム",
+    "task": "フィードフレーム　片付け",
+    "task_fk": null,
+    "start_time": "16:10:00",
+    "end_time": "18:40:00",
+    "memo": "森営業部長が来て不具合確認",
+    "作業時間": "02:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 235,
+  "fields": {
+    "date": "2025-07-18",
+    "company": "日本製鋼所",
+    "product": "JSW180大物",
+    "task": "JSW180　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "18:40:00",
+    "end_time": "19:30:00",
+    "memo": "",
+    "作業時間": "00:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 236,
+  "fields": {
+    "date": "2025-07-22",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "17:30:00",
+    "memo": "フォークリフト対応　コテイバン×１不具合交換",
+    "作業時間": "08:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 237,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "06:30:00",
+    "end_time": "08:00:00",
+    "memo": "",
+    "作業時間": "01:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 238,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100　片付け",
+    "task_fk": null,
+    "start_time": "08:00:00",
+    "end_time": "08:20:00",
+    "memo": "",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 239,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　段取り",
+    "task_fk": null,
+    "start_time": "08:20:00",
+    "end_time": "08:30:00",
+    "memo": "JSW100×2",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 240,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　段取り",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:15:00",
+    "memo": "JSW100小物×2",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 241,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW180出荷",
+    "task": "JSW180出荷　段取り",
+    "task_fk": null,
+    "start_time": "09:15:00",
+    "end_time": "09:45:00",
+    "memo": "JSW180×2",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 242,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:45:00",
+    "end_time": "10:00:00",
+    "memo": "JSW100×2",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 243,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW180出荷",
+    "task": "JSW180　出荷",
+    "task_fk": null,
+    "start_time": "10:10:00",
+    "end_time": "10:30:00",
+    "memo": "JSW180×2",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 244,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "10:30:00",
+    "end_time": "12:00:00",
+    "memo": "JSW100小物×2",
+    "作業時間": "01:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 245,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "日本製鋼所",
+    "product": "JSW100小物",
+    "task": "JSW100小物　片付け",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "14:00:00",
+    "memo": "",
+    "作業時間": "01:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 246,
+  "fields": {
+    "date": "2025-07-23",
+    "company": "自社",
+    "product": "その他",
+    "task": "雑用",
+    "task_fk": null,
+    "start_time": "14:00:00",
+    "end_time": "17:30:00",
+    "memo": "何をしたか忘れた。",
+    "作業時間": "03:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 247,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "11:30:00",
+    "memo": "JSW100×2",
+    "作業時間": "02:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 248,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "日本製鋼所",
+    "product": "JSW100大物",
+    "task": "JSW100大物　片付け",
+    "task_fk": null,
+    "start_time": "11:30:00",
+    "end_time": "11:45:00",
+    "memo": "JSW100大物×2",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 249,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "その他",
+    "product": "その他",
+    "task": "あて作り",
+    "task_fk": null,
+    "start_time": "11:45:00",
+    "end_time": "12:00:00",
+    "memo": "",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 250,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:15:00",
+    "end_time": "14:00:00",
+    "memo": "レセプタクル×1",
+    "作業時間": "04:45:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 251,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "トーヨーエイテック",
+    "product": "ボディHBX",
+    "task": "ボディ　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "14:00:00",
+    "end_time": "17:00:00",
+    "memo": "ボディHBX×1",
+    "作業時間": "03:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 252,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　段取り",
+    "task_fk": null,
+    "start_time": "17:00:00",
+    "end_time": "17:20:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 253,
+  "fields": {
+    "date": "2025-07-24",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "17:20:00",
+    "end_time": "19:30:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "02:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 254,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "その他",
+    "product": "その他",
+    "task": "給水機清掃",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:15:00",
+    "memo": "",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 255,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100出荷　段取り",
+    "task_fk": null,
+    "start_time": "09:15:00",
+    "end_time": "09:30:00",
+    "memo": "JSW100出荷×2",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 256,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:30:00",
+    "end_time": "10:50:00",
+    "memo": "リアホルダーLR×3",
+    "作業時間": "01:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 257,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "リアホルダーLR",
+    "task": "リアホルダーLR　片付け",
+    "task_fk": null,
+    "start_time": "10:50:00",
+    "end_time": "11:00:00",
+    "memo": "",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 258,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "JSW100出荷",
+    "task": "JSW100出荷",
+    "task_fk": null,
+    "start_time": "11:00:00",
+    "end_time": "11:10:00",
+    "memo": "JSW100×2",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 259,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "事務",
+    "task": "JSW180　検査記録",
+    "task_fk": null,
+    "start_time": "11:10:00",
+    "end_time": "11:20:00",
+    "memo": "",
+    "作業時間": "00:10:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 260,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "自社",
+    "product": "自社トラック積み込み",
+    "task": "積み込み",
+    "task_fk": null,
+    "start_time": "11:20:00",
+    "end_time": "11:40:00",
+    "memo": "",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 261,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "ボディHBX",
+    "task": "ボディHBX　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "11:40:00",
+    "end_time": "12:00:00",
+    "memo": "",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 262,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "ボディHBX",
+    "task": "ボディHBX　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "13:00:00",
+    "end_time": "15:00:00",
+    "memo": "",
+    "作業時間": "02:00:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 263,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "自社",
+    "product": "その他",
+    "task": "リーチバッテリー水いれ",
+    "task_fk": null,
+    "start_time": "15:10:00",
+    "end_time": "15:40:00",
+    "memo": "",
+    "作業時間": "00:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 264,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "ボディHBX",
+    "task": "ボディHBX　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "15:40:00",
+    "end_time": "17:30:00",
+    "memo": "ボディ×1",
+    "作業時間": "01:50:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 265,
+  "fields": {
+    "date": "2025-07-26",
+    "company": "トーヨーエイテック",
+    "product": "レセプタクル",
+    "task": "レセプタクル　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "08:45:00",
+    "end_time": "09:05:00",
+    "memo": "レセプタクル×1",
+    "作業時間": "00:20:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 266,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "JSW130大物",
+    "task": "JSW130大物　段取り",
+    "task_fk": null,
+    "start_time": "09:05:00",
+    "end_time": "09:20:00",
+    "memo": "JSW130×2",
+    "作業時間": "00:15:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 267,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "JSW130大物",
+    "task": "JSW130大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "09:20:00",
+    "end_time": "15:00:00",
+    "memo": "JSW130×2",
+    "作業時間": "05:40:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 268,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "トーヨーエイテック",
+    "product": "ボディHBX",
+    "task": "ボディHBX　不具合対応",
+    "task_fk": null,
+    "start_time": "15:10:00",
+    "end_time": "16:40:00",
+    "memo": "ボディ×1",
+    "作業時間": "01:30:00"
+  }
+},
+{
+  "model": "main.dailyreport",
+  "pk": 269,
+  "fields": {
+    "date": "2025-07-25",
+    "company": "日本製鋼所",
+    "product": "JSW130大物",
+    "task": "JSW130大物　手入れ　清掃　塗装　検査　梱包",
+    "task_fk": null,
+    "start_time": "16:40:00",
+    "end_time": "17:30:00",
+    "memo": "JSW130×2",
+    "作業時間": "00:50:00"
+  }
+}
+]
