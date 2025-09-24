@@ -10,6 +10,8 @@ from .models import DailyReport, Task, TaskPreset
 from .utils import parse_time, format_timedelta
 from main.utils import summarize_reports, generate_monthly_comparison
 
+from django.db.models import F
+
 import re
 
 def jsw_product_sort_key(product_name, company_name):
@@ -251,13 +253,16 @@ def report_list(request):
         qs = DailyReport.objects.filter(date__year=selected_year, date__month=selected_month)
         if selected_day:
             qs = qs.filter(date__day=selected_day)
-        reports = qs.order_by('date')
+        reports = qs.order_by('date', F('start_time').asc(nulls_last=True), 'id')
+
     else:
         today = datetime.today()
         selected_year = today.year
         selected_month = today.month
         selected_day = None
-        reports = DailyReport.objects.filter(date__year=selected_year, date__month=selected_month).order_by('date')
+        reports = (DailyReport.objects
+                   .filter(date__year=selected_year, date__month=selected_month)
+                   .order_by('date', F('start_time').asc(nulls_last=True), 'id'))
 
     context = {
         'years': years,
