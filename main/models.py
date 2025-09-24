@@ -51,7 +51,14 @@ class DailyReport(models.Model):
     end_time   = models.TimeField(default='05:31')
     memo = models.TextField(blank=True)
     作業時間 = models.DurationField(null=True, blank=True)
-
+    
+    class Meta:
+        ordering = ['date', 'start_time', 'id']   # 同日内は開始時刻→idで昇順
+        indexes = [
+            models.Index(fields=['date']),
+            models.Index(fields=['start_time']),
+        ]
+    
     def __str__(self):
         show_task = self.task_fk.name if self.task_fk else self.task
         return f"{self.date} - {self.company} - {show_task}"
