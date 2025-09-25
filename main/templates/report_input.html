@@ -139,14 +139,28 @@
 
       function filterPresets() {
         if (!presetSel) return;
+
         const prod = (productSel?.value || '').trim();
+
         Array.from(presetSel.options).forEach(opt => {
-          if (!opt.value) { opt.hidden = false; return; }   // 先頭の案内は常に表示
+          if (!opt.value) {
+            opt.hidden = false; // 先頭案内は常に表示
+            return;
+          }
           const target = (opt.dataset.product || '').trim(); // 空＝共通
-          opt.hidden = (target && target !== prod);
+
+          if (!prod) {
+            // 商品未選択 → 全部表示
+            opt.hidden = false;
+          } else {
+            // 商品を選んだとき → 共通 or 商品一致だけ表示
+            opt.hidden = (target && target !== prod);
+          }
         });
-        presetSel.value = ''; // 商品変更時は未選択へ
+
+        presetSel.value = ''; // 商品変更時は未選択に戻す
       }
+
 
       if (presetSel && taskField) {
         presetSel.addEventListener('change', () => {
