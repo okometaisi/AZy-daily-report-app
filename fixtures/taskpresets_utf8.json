@@ -1,0 +1,167 @@
+[
+{
+  "model": "main.taskpreset",
+  "pk": 1,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW100大物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW100大物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 2,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW130大物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW130大物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 3,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW180大物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW180大物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 4,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW100小物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW100小物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 5,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW130小物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW130小物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 6,
+  "fields": {
+    "label": "日本製鋼所",
+    "content": "JSW180小物　手入れ　清掃　塗装　検査　梱包",
+    "product": "JSW180小物",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 7,
+  "fields": {
+    "label": "トーヨーエイテック",
+    "content": "レセプタクル　手入れ　清掃　検査　塗装",
+    "product": "レセプタクル",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 8,
+  "fields": {
+    "label": "トーヨーエイテック",
+    "content": "ブロックLR　手入れ　清掃　検査　梱包　検査記録",
+    "product": "ブロックLR",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 9,
+  "fields": {
+    "label": "トーヨーエイテック",
+    "content": "リアホルダーLR 　手入れ　清掃　検査　梱包　検査記録",
+    "product": "リアホルダーLR",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 10,
+  "fields": {
+    "label": "トーヨーエイテック",
+    "content": "ボディHBX　手入れ　清掃　検査",
+    "product": "ボディHBX",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 11,
+  "fields": {
+    "label": "トーヨーエイテック",
+    "content": "シェル　手入れ　清掃　検査　梱包　検査記録",
+    "product": "シェル",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 12,
+  "fields": {
+    "label": "富士機械",
+    "content": "インアウトフィードフレーム　手入れ　塗装　梱包",
+    "product": "インアウトフィードフレーム",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 13,
+  "fields": {
+    "label": "富士機械",
+    "content": "フィードフレーム　手入れ　塗装　梱包",
+    "product": "フィードフレーム",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 14,
+  "fields": {
+    "label": "富士機械",
+    "content": "ジョウブフレーム　手入れ　清掃　塗装　検査　梱包",
+    "product": "ジョウブフレーム",
+    "sort_order": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "main.taskpreset",
+  "pk": 15,
+  "fields": {
+    "label": "富士機械",
+    "content": "フレーム　手入れ　清掃　塗装　検査　梱包",
+    "product": "フレーム",
+    "sort_order": 10,
+    "is_active": true
+  }
+}
+]
